@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not change inadvertenly 1`] = `
+<div
+  className="col-6"
+>
+  <label
+    htmlFor="spaces"
+  >
+    <input
+      id="spaces"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span>
+      Eliminate extra spaces
+    </span>
+  </label>
+</div>
+`;

@@ -1,0 +1,10 @@
+/* CSS files add styling rules to your content */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+}

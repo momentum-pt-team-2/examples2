@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Database</title>
+  <link rel="stylesheet" href="./node_modules/shoelace-css/dist/shoelace.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Books Database</h1>
+    <div class="main-actions">
+      <button type="button" class="button-lg" id="add-book-button">Add new book</button>
+    </div>
+    <form id="add-book-form" class="hidden">
+      <div class="row">
+        <div class="col input-field">
+          <input type="text" placeholder="Title" name="title" id="title">
+        </div>
+        <div class="col input-field">
+          <input type="text" placeholder="Authors" name="authors" id="authors">
+        </div>
+        <div class="col input-field">
+          <select name="status" id="status">
+            <option value="toread">To Read</option>
+            <option value="reading">Reading</option>
+            <option value="read">Read</option>
+          </select>
+        </div>
+        <div class="col">
+          <button type="submit">Add Book</button>
+        </div>
+      </div>
+    </form>
+    <h2>Reading</h2>
+    <section id="books-reading">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Magician's Nephew</td>
+            <td>C.S. Lewis</td>
+            <td>
+              <button type="button">Mark as read</button>
+              <button type="button" class="button-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <h2>To Read</h2>
+    <section id="books-toread">
+        <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Hobbit</td>
+                <td>J.R.R. Tolkien</td>
+                <td>
+                  <button type="button">Mark as reading</button>
+                  <button type="button" class="button-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+    <h2>Read</h2>
+    <section id="books-read">
+        <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A Wizard of Earthsea</td>
+                <td>Ursula K. Le Guin</td>
+                <td>
+                  <button type="button" class="button-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+  </div>
+</body>
+</html>

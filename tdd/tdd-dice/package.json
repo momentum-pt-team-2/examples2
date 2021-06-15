@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "dependencies": {
+    "babel-jest": "^22.4.4",
+    "jest": "^22.4.4",
+    "parcel": "^1.8.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

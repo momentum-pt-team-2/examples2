@@ -1,0 +1,11 @@
+body {
+  padding-top: 1rem;
+}
+
+.main-actions {
+  margin: 2rem 0;
+}
+
+.hidden {
+  display: none;
+}
